@@ -123,16 +123,27 @@
     }
 
     try {
-      var qr = qrcode(0, 'M');
+      /* Nivel H (30% de recuperación) para que el logo central
+         no impida la lectura del código */
+      var qr = qrcode(0, 'H');
       qr.addData(text);
       qr.make();
-      qrBox.innerHTML = qr.createImgTag(6, 4);
-      var img = qrBox.querySelector('img');
+
+      var wrap = document.createElement('div');
+      wrap.className = 'qr-inner';
+      wrap.innerHTML = qr.createImgTag(5, 1);
+
+      var img = wrap.querySelector('img');
       if (img) {
         img.alt = 'Código QR con el enlace a esta página';
-        img.style.width = '100%';
-        img.style.height = '100%';
       }
+
+      var logo = document.createElement('span');
+      logo.className = 'qr-logo';
+      logo.innerHTML = '<img src="assets/logo.png" alt="">';
+
+      wrap.appendChild(logo);
+      qrBox.appendChild(wrap);
     } catch (e) {
       qrBox.textContent = text;
     }
