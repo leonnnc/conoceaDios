@@ -1,0 +1,9 @@
+.DS_Store
+*.log
+
+# Renders del PDF de diseño (fuente local, no se publica)
+_pdfpages/
+
+# Temporales
+*.tmp
+Thumbs.db
