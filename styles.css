@@ -155,6 +155,26 @@ a { color: inherit; }
   fill: var(--white);
 }
 
+a.social-btn {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s var(--ease);
+}
+a.social-btn:hover,
+a.social-btn:focus-visible {
+  background: var(--blue-deep);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(35, 82, 174, .38);
+}
+a.social-btn:active { transform: translateY(-1px); }
+a.social-btn:focus-visible { outline: 3px solid var(--lime); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  a.social-btn { transition: none; }
+  a.social-btn:hover,
+  a.social-btn:focus-visible { transform: none; }
+}
+
 .social-handle {
   position: relative;
   z-index: 1;

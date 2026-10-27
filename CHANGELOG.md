@@ -1,6 +1,19 @@
 # Cambios
 
-Formato basado en [SemVer](https://semver.org/lang/es/). Versión actual: **0.1.3**
+Formato basado en [SemVer](https://semver.org/lang/es/). Versión actual: **0.1.4**
+
+## 0.1.4 — 2026-10-26
+
+Redes sociales del inicio.
+
+- Los iconos del hero ahora son enlaces reales que abren en pestaña nueva:
+  - Facebook → `https://www.facebook.com/icatedraldefe/`
+  - Instagram → `https://www.instagram.com/icatedraldefe/`
+  - YouTube → `https://www.youtube.com/@CatedraldeFeCDF`
+- Iconos sustituidos por los trazos oficiales de cada marca, para que el dibujo coincida con su nombre (el de Instagram estaba deformado).
+- `aria-label` por red, `rel="noopener noreferrer"` y estado de foco visible.
+- Efecto al pasar el cursor y soporte de `prefers-reduced-motion`.
+- La línea bajo los iconos pasa de `@icatedraldefe` a "Síguenos", porque YouTube usa otro identificador (`@CatedraldeFeCDF`).
 
 ## 0.1.3 — 2026-10-26
 

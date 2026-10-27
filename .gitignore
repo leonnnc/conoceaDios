@@ -7,3 +7,6 @@ _pdfpages/
 # Temporales
 *.tmp
 Thumbs.db
+
+# Capturas de revisión local
+_review/
