@@ -630,6 +630,15 @@ a { color: inherit; }
 }
 .foot img { border-radius: 50%; }
 .foot p { margin: 0; }
+.foot .ver {
+  margin-left: .35rem;
+  padding: .12rem .45rem;
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: 999px;
+  font-size: .72rem;
+  letter-spacing: .04em;
+  opacity: .75;
+}
 
 /* ---------- dots de navegación ---------- */
 .dots {
